@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500;700&display=swap');
 
 * {
     box-sizing: border-box;
@@ -9,7 +9,7 @@
 li,
 a,
 button {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Nunito", sans-serif;
     font-weight: 500;
     font-size: 16px;
     color: #edf0f1;
@@ -20,9 +20,10 @@ header {
     background-color: #3CC0CC;
     display: flex;
     justify-content: space-between;
-    /* justify-content: flex-end; */
     align-items: center;
     padding: 30px 10%;
+    position: sticky;
+    top: 0;
 }
 
 .logo {
@@ -44,12 +45,12 @@ header {
 }
 
 .nav__links li a:hover {
-    color: #0088a9;
+    color: #FD8901;
 }
 
 button {
     padding: 9px 25px;
-    background-color: rgba(0, 136, 169, 1);
+    background-color: #fd8701c3;
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -57,7 +58,7 @@ button {
 }
 
 button:hover {
-    background-color: rgba(0, 136, 169, 0.8);
+    background-color: #FD8901;
 }
 
 /* Hero Section */
@@ -86,16 +87,16 @@ main {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=pexels-pixabay-531880.jpg&fm=jpg');
+    background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    filter: brightness(40%);
+    filter: brightness(80%);
 }
 
 .hero-content {
     position: relative;
-    font-family: "Monserrat", sans-serif;
+    font-family: "Nunito", sans-serif;
     color: white;
     text-align: center;
     margin: 0.625rem;
@@ -116,25 +117,28 @@ main {
 }
 
 .hero-button {
-    background-color: #ae2d59;
+    background-color: transparent;
     color: white;
-    border: 1px solid #cb376a;
+    border: 3px solid #FD8901;
     margin-top: 5rem;
     padding: 0.9375rem1.875rem;
-    font-family: "Monserrat", sans-serif;
+    font-family: "Nunito", sans-serif;
     font-size: 1.125rem;
-    font-weight: 200;
+    font-weight: 700;
     cursor: pointer;
+    transition: all .2s ease-in-out;
 }
 
 .hero-button:hover {
-    background-color: #cb376a;
-    border: 1px solid #db7598;
+    font-weight: 700;
+    background-color: #FD8901;
+    border: 3px solid #FD8901;
 }
 
 .container-paket {
     padding: 5rem;
     text-align: center;
+    font-family: 'Nunito', sans-serif;
 }
 
 .paket {
@@ -156,21 +160,66 @@ main {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
+.card button {
+    margin-top: auto;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+    color: #3CC0CC;
+
+    border: 3px solid #3CC0CC;
+    border-radius: 999px;
+    background: transparent;
+    cursor: pointer;
+    transition: all .15s ease-in;
+}
+
+.card button:hover {
+    border: 3px solid transparent;
+    color: white;
+    background-color: #3CC0CC;
+}
+
 .img-paket {
     border-radius: 5px 5px 0 0;
 }
 
 .container-text-paket {
     padding: 1.5rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+.container-text-paket ul {
+    list-style-type: none;
+}
+
+.container-text-paket ul li {
+    color: black;
 }
 
 .container-kontak {
+    padding: 5em;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+.container-kontak h4 {
+    margin-top: 0.5rem;
+}
+.container-kontak li {
+    display: inline-block;
+    justify-content: center;
+    margin: 0.7em;
+}
+
+.container-form {
     padding: 5rem;
     text-align: center;
+    font-family: 'Nunito', sans-serif;
 }
 
 /* container form */
-.container-kontak {
+.container-form {
     width: 100%;
     margin: 0 auto;
     position: relative;
@@ -188,7 +237,6 @@ main {
 #contact {
     background: #F9F9F9;
     padding: 25px;
-    margin: 150px 0;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
@@ -229,7 +277,7 @@ fieldset {
 #contact input[type="text"]:hover,
 #contact input[type="email"]:hover,
 #contact input[type="tel"]:hover,
-#contact input[type="url"]:hover,
+#contact input[type="text"]:hover,
 #contact textarea:hover {
     -webkit-transition: border-color 0.3s ease-in-out;
     -moz-transition: border-color 0.3s ease-in-out;
@@ -247,7 +295,7 @@ fieldset {
     cursor: pointer;
     width: 100%;
     border: none;
-    background: #4CAF50;
+    background: #FD8901;
     color: #FFF;
     margin: 0 0 5px;
     padding: 10px;
@@ -255,7 +303,7 @@ fieldset {
 }
 
 #contact button[type="submit"]:hover {
-    background: #43A047;
+    background: #d57201;
     -webkit-transition: background 0.3s ease-in-out;
     -moz-transition: background 0.3s ease-in-out;
     transition: background-color 0.3s ease-in-out;
@@ -290,3 +338,41 @@ fieldset {
 :-ms-input-placeholder {
     color: #888;
 }
+
+.fa {
+    padding: 20px;
+    font-size: 30px !important;
+    width: 66px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+footer{
+    background-color:#3CC0CC;
+    color:#fff;
+    font-weight:700;
+    padding:20px;
+    text-align:center;
+    font-family: 'Nunito', sans-serif;
+}
+

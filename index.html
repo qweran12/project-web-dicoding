@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>HolyTrip Indonesia</title>
     <link rel="stylesheet" href="assets/style/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <header>
@@ -16,15 +17,15 @@
       />
       <nav>
         <ul class="nav__links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Aplikasi</a></li>
+          <li><a href="#hero">Beranda</a></li>
+          <li><a href="#paket-wisata">Paket Wisata</a></li>
           <li><a href="#">About</a></li>
         </ul>
       </nav>
-      <a class="cta" href="#"><button>Kontak</button></a>
+      <a class="cta" href="#kontak-kami"><button>Kontak</button></a>
     </header>
     <main>
-      <section class="hero">
+      <section class="hero" id="hero">
         <div class="hero-content">
           <h1 class="hero-title">HolyTrip Indonesia</h1>
 
@@ -34,104 +35,116 @@
             layaknya anda bagaikan keluarga kami sendiri.
           </h2>
 
-          <button type="button" class="hero-button">
-            Search for tours &raquo;
-          </button>
+          <a href="#paket-wisata"><button type="button" class="hero-button">
+            Cari Paket Tur &raquo;
+          </button></a>
         </div>
       </section>
-      <section class="container-paket">
-        <h1>Pilih Paket</h1>
+      <section class="container-paket" id="paket-wisata">
+        <h1>Pilih Paket Wisata Idaman Kamu :</h1>
         <div class="paket">
             <div class="card">
             <img
                 class="img-paket"
-                src="https://awsimages.detik.net.id/community/media/visual/2022/03/21/ilustrasi-objek-wisata-pantai.jpeg?w=1200"
+                src="assets/images/pantai-melasti.jpg"
                 alt="Avatar"
                 style="width: 100%"
             />
             <div class="container-text-paket">
-                <h1><b>Jane Doe</b></h4>
-                <p style="margin-top: 10px;">Interior Designer</p>
-                <ul>
+                <h1><b>Mai Melali ke Bali</b></h1>
+                <h2 style="font-size: 1.3rem;">3D1N</h2>
+                <ul style="margin-top: 8px; margin-bottom: 8px;">
                 <li>Bloom Garden</li>
                 <li>Pantai Lovina</li>
                 <li>Pantai Melasti</li>
                 <li>Tanjung Benoa</li>
                 </ul>
+                <a href="#form-kami"> <button> Pesan Sekarang</button> </a>
             </div>
             </div>
             <div class="card">
+              <img
+                  class="img-paket"
+                  src="https://asset.kompas.com/crops/QXavO5c0Jxe2NRMfKU5-XWLJvj8=/112x0:723x407/750x500/data/photo/2021/09/26/61505e3ce45f1.jpg"
+                  alt="Avatar"
+                  style="width: 100%"
+              />
+              <div class="container-text-paket">
+                  <h1><b>Arulin ka Bandung</b></h1>
+                  <h2 style="font-size: 1.3rem;">4D2N</h2>
+                  <ul style="margin-top: 8px; margin-bottom: 8px;" >
+                  <li>De Castello</li>
+                  <li>Emte Highland</li>
+                  <li>Farm House</li>
+                  <li>Glamping Rancabali</li>
+                  </ul>
+                  <a href="#form-kami"> <button> Pesan Sekarang</button> </a>
+              </div>
+              </div>
+              <div class="card">
                 <img
-                class="img-paket"
-                src="https://awsimages.detik.net.id/community/media/visual/2022/03/21/ilustrasi-objek-wisata-pantai.jpeg?w=1200"
-                alt="Avatar"
-                style="width: 100%"
+                    class="img-paket"
+                    src="https://inibaru.id/_next/image?url=https%3A%2F%2Fredaksi.inibaru.id%2Fnuploads%2F1%2Fumum%2Fbukit%2520love.jpeg&w=1920&q=75"
+                    alt="Avatar"
+                    style="width: 100%"
                 />
                 <div class="container-text-paket">
-                <h1><b>Jane Doe</b></h4>
-                <p style="margin-top: 10px;">Interior Designer</p>
-                <ul>
-                    <li>Bloom Garden</li>
-                    <li>Pantai Lovina</li>
-                    <li>Pantai Melasti</li>
-                    <li>Tanjung Benoa</li>
-                </ul>
+                    <h1><b>Healing Karimunjawa</b></h1>
+                    <h2 style="font-size: 1.3rem;">3D1N</h2>
+                    <ul style="margin-top: 8px; margin-bottom: 8px;">
+                    <li>Bukit Love</li>
+                    <li>Pantai Bobby</li>
+                    <li>Pantai Pasir Putih Gosong</li>
+                    <li>Pantai Tanjung Gelam</li>
+                    </ul>
+                    <a href="#form-kami"> <button> Pesan Sekarang</button> </a>
                 </div>
-            </div>
-            <div class="card">
-                <img
-                class="img-paket"
-                src="https://awsimages.detik.net.id/community/media/visual/2022/03/21/ilustrasi-objek-wisata-pantai.jpeg?w=1200"
-                alt="Avatar"
-                style="width: 100%"
-                />
-                <div class="container-text-paket">
-                <h1><b>Jane Doe</b></h4>
-                <p style="margin-top: 10px;">Interior Designer</p>
-                <ul>
-                    <li>Bloom Garden</li>
-                    <li>Pantai Lovina</li>
-                    <li>Pantai Melasti</li>
-                    <li>Tanjung Benoa</li>
-                </ul>
                 </div>
-            </div>
-            <div class="card">
-                <img
-                class="img-paket"
-                src="https://awsimages.detik.net.id/community/media/visual/2022/03/21/ilustrasi-objek-wisata-pantai.jpeg?w=1200"
-                alt="Avatar"
-                style="width: 100%"
-                />
-                <div class="container-text-paket">
-                <h1><b>Jane Doe</b></h4>
-                <p style="margin-top: 10px;">Interior Designer</p>
-                <ul>
-                    <li>Bloom Garden</li>
-                    <li>Pantai Lovina</li>
-                    <li>Pantai Melasti</li>
-                    <li>Tanjung Benoa</li>
-                </ul>
-                </div>
-            </div>
-            </div>
+                <div class="card">
+                  <img
+                      class="img-paket"
+                      src="assets/images/pantai-melasti.jpg"
+                      alt="Avatar"
+                      style="width: 100%"
+                  />
+                  <div class="container-text-paket">
+                      <h1><b>Dolan ala Selebgram</b></h1>
+                      <h2 style="font-size: 1.3rem;">2D1N</h2>
+                      <ul style="margin-top: 8px; margin-bottom: 8px;">
+                      <li>Alun-Alun Kota Wisata Batu</li>
+                      <li>Flora Wisata San Terra</li>
+                      <li>Kusuma Agrowisata</li>
+                      <li>Jawa Timur Park 3</li>
+                      </ul>
+                      <a href="#form-kami"> <button> Pesan Sekarang</button> </a>
+                  </div>
+                  </div>
         </section>
-        <section class="container-kontak">
+        <section class="container-kontak" id="kontak-kami">
+          <h2>Jika Anda Memiliki Pertanyaan Terkait Paket Wisata atau Ingin Custom Sesuai Keinginan</h2>
+          <h4>Hubungi Kami Melalui :</h4>
+          <ul>
+            <li><a href="https://www.facebook.com/holytripofficial" class="fa fa-facebook"></a></li>
+            <li><a href="https://www.instagram.com/holytrip_official/" class="fa fa-instagram"></a></li>
+            <li><a href="mailto:holytripmalang@gmail.com" class="fa fa-google"></a></li>
+          </ul>
+        </section>
+        <section class="container-form" id="form-kami">
              
                 <form id="contact" action="" method="post">
-                  <h3>Colorlib Contact Form</h3>
-                  <h4>Contact us for custom quote</h4>
+                  <h3>Konfirmasi Paket Wisata Pilihan Kamu</h3>
+                  <h4>Mohon diisi dengan seksama</h4>
                   <fieldset>
-                    <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+                    <input placeholder="Nama Lengkap" type="text" tabindex="1" required autofocus>
                   </fieldset>
                   <fieldset>
-                    <input placeholder="Your Email Address" type="email" tabindex="2" required>
+                    <input placeholder="Email yang bisa dihubungi" type="email" tabindex="2" required>
                   </fieldset>
                   <fieldset>
-                    <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
+                    <input placeholder="Nomor Whatsapp yang bisa dihubungi" type="tel" tabindex="3" required>
                   </fieldset>
                   <fieldset>
-                    <input placeholder="Your Web Site (optional)" type="url" tabindex="4" required>
+                    <input placeholder="Paket Wisata Pilihanmu" type="text" tabindex="4" required>
                   </fieldset>
                   <fieldset>
                     <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
@@ -142,6 +155,9 @@
                 </form>
         </section>
     </main>
-    <footer></footer>
+    <aside>
+      
+    </aside>
+    <footer>&copy; 2023, HolyTrip Indonesia</footer>
   </body>
 </html>
