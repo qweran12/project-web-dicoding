@@ -31,15 +31,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-<<<<<<< Updated upstream
-    padding: 5px 10%;
-=======
     padding: 30px 10%;
     z-index: 1;
->>>>>>> Stashed changes
     position: sticky;
     top: 0;
-    z-index: 1;
 }
 
 .navbar {
@@ -171,6 +166,7 @@ input[type=checkbox] {
         background-color: #4c9e9e;
         z-index: 1;
     }
+
    
 }
 
@@ -331,12 +327,7 @@ main {
 }
 
 
-@media (max-width: 768px) {
-   .paket {
-    grid-template-columns: repeat(1, 1fr) !important;
-   }
-   
-}
+
 
 #contact input[type="text"],
 #contact input[type="email"],
@@ -479,10 +470,7 @@ fieldset {
     background: #125688;
     color: white;
 }
-<<<<<<< Updated upstream
 
-=======
->>>>>>> Stashed changes
 .profile {
     margin-top: px;
     display: flex;
@@ -492,7 +480,6 @@ fieldset {
     text-align: center;
     justify-items: center;
     margin-bottom: 5rem;
-<<<<<<< Updated upstream
 }
 
 .card-profile {
@@ -514,28 +501,14 @@ footer{
     text-align:center;
     font-family: 'Nunito', sans-serif;
 }
-
-
-=======
-}
-
-.card-profile {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
-    width: 25%;
-    border-radius: 5px;
-}
-
-.card-profile:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-
-footer {
-    background-color: #3CC0CC;
-    color: #fff;
-    font-weight: 700;
-    padding: 20px;
-    text-align: center;
-    font-family: 'Nunito', sans-serif;
-}
->>>>>>> Stashed changes
+@media (max-width: 768px) {
+    .paket {
+     grid-template-columns: repeat(1, 1fr) !important;
+    }
+    .card-profile {
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+     transition: 0.3s;
+     width: 50%;
+     border-radius: 5px;
+ }
+ }
